@@ -1,9 +1,9 @@
 <?php
 // config.php
 $host = 'localhost';   // 数据库主机
-$dbname = 'fh12';    // 数据库名称
-$username = 'fh12';    // 数据库用户名
-$password = 'fh12';        // 数据库密码
+$dbname = '';    // 数据库名称
+$username = '';    // 数据库用户名
+$password = '';        // 数据库密码
 
 try {
     // 创建数据库连接
