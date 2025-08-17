@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        #targetIframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <iframe id="targetIframe"></iframe>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const base64Url = urlParams.get('s'); 
+
+        if (base64Url) {
+            const decodedUrl = atob(base64Url);
+            document.getElementById('targetIframe').src = decodedUrl;
+        } else {
+            alert('未找到有效的URL参数!');
+        }
+    </script>
+</body>
+</html>
