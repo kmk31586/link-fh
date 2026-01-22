@@ -1,5 +1,5 @@
 # link-fh
-一个简单通用的cos防洪系统
+新交流群：https://t.me/PenLin8_qun
 
 #部署文档
 1.环境要求，Nginx 1.26.3 PHP8，MySQL 5.7.44
